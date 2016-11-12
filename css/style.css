@@ -1,0 +1,189 @@
+/*Universal Settings*/
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: none;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 100px;
+  padding: 10px 0 40px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.faded-text {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+}
+
+/*Flexbox Settings*/
+
+.wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Header Styles*/
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+/*Button Styles*/
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: 30px 0;
+}
+
+.topic-button {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.topic-hover {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+/*Image Gallery Style*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+
+/*Media Queries*/
+
+@media (min-width: 575px) {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 650px) {
+
+  .head-container {
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h4 {
+    margin: 0 20px;
+    margin-top: 80px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 722px) {
+  .wrapper-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .topic-button {
+    margin: 30px;
+  }
+
+  .topic-hover {
+    width: 80%;
+  }
+
+  h1 {
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 900px) {
+  h2 {
+    width: auto;
+    margin-top: 52px;
+  }
+
+  .cell {
+  width: calc(100% / 3);
+  }
+
+}
